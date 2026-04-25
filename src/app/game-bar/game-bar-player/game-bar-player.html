@@ -1,0 +1,12 @@
+<div class="player-container">
+    <div class="player-name-container">
+        <div class="player-name">{{ player().name }}</div>
+        <div 
+            class="choose-relic unselectable"
+            (click)="chooseRelic()"
+        >+</div>
+    </div>
+    @for(relic of player().relics; track relic.name) {
+        <app-relic-component [relic]="relic"></app-relic-component>
+    }
+</div>

@@ -1,0 +1,23 @@
+.relic-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.relic-container {
+    display: flex;
+    padding-top: 4px;
+    font-family: fraktion-mono-regular;
+    font-size: 12px;
+    
+    .relic-name {
+        font-family: fraktion-mono-bold;
+        padding-bottom: 2px;
+    }
+
+    .relic-desc {
+        font-size: 10px;
+    }
+}

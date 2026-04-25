@@ -1,0 +1,17 @@
+
+<div class="players-container">
+    @for(player of players(); track player.id) {
+        <app-game-bar-player 
+            [player]="player"
+            (relicAdded)="onRelicAdded(player, $event)"
+        >
+        </app-game-bar-player>
+    }
+</div>
+
+<button matMiniFab>
+    <mat-icon>menu</mat-icon>
+</button>
+<button matMiniFab>
+    <mat-icon>home</mat-icon>
+</button>

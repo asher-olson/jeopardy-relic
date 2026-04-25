@@ -1,0 +1,19 @@
+:host ::ng-deep .relic-container {
+    background-color: #f81d78;
+    border-radius: 10px;
+    margin-top: 10px;
+    line-height: .8rem;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.relic {
+    :hover {
+        background-color: #b61b5c;
+    }
+}
+
+.relics-container {
+    width: 100%;
+    justify-content: center;
+}

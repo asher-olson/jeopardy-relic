@@ -1,0 +1,26 @@
+
+.player-container {
+    min-width: 160px;
+    margin-bottom: 14px;
+    margin-right: 14px;
+    border-radius: 10px;
+    border: 1px black;
+    background-color: #c3fc0d;
+    padding: 6px 14px;
+}
+
+.player-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: kh-interference-bold;
+
+    .player-name {
+        font-size: 14px;
+    }
+
+    .choose-relic {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}

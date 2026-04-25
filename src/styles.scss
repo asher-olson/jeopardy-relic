@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'kh-interference-regular';
+  src: url('/font-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+@font-face {
+  font-family: 'kh-interference-light';
+  src: url('/font-light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+@font-face {
+  font-family: 'kh-interference-bold';
+  src: url('/font-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+@font-face {
+  font-family: 'fraktion-mono-regular';
+  src: url('/fraktion-mono-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+@font-face {
+  font-family: 'fraktion-mono-bold';
+  src: url('/fraktion-mono-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Prevents invisible text during loading */
+}
+
+html {
+  background-color: #470bf6;
+  font-family: kh-interference-regular;
+  // font-family: fraktion-mono-bold;
+  h2 {
+    font-family: kh-interference-bold;
+  }
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Standard syntax */
+}
+
+.cdk-overlay-pane.mat-mdc-dialog-panel {
+  min-width: unset !important;
+  width: 100%;
+}
+
+.mat-mdc-dialog-surface {
+  background-color: #fd6c1d !important;
+  border-radius: 10px !important;
+}
+
+.mat-mdc-dialog-container .mat-mdc-dialog-content {
+  color: inherit !important;
+  padding: 20px 12px !important;
+}
+
+.center-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,20 @@
+<div class="center-content">
+    <h2>Choose 1</h2>
+</div>
+<div class="center-content">
+    <span class="player-name">{{ playerName() }}</span>
+</div>
+
+<mat-dialog-content class="choose-dialog-content">
+    <div class="relics-container">
+            @for(choice of choices(); track choice.id) {
+                <app-relic-component
+                    [relic]="choice"
+                    [isChooseDialog]="true"
+                    (click)="onClick(choice)"
+                    class="relic"
+                >
+                </app-relic-component>
+            }
+    </div>
+</mat-dialog-content>
