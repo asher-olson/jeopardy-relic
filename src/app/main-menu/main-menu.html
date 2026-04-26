@@ -1,1 +1,28 @@
-<p>main-menu works!</p>
+<div class="menu-container">
+  <h1 class="lime">Jeopardy Relic</h1>
+  <div class="card-container">
+    <mat-card class="menu-card">
+        <mat-card-header>
+            <h2>Start Game</h2>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="icon-container">
+                <mat-icon>play_arrow</mat-icon>
+            </div>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="menu-card">
+        <mat-card-header>
+            <h2>Relics</h2>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="icon-container">
+                <mat-icon>toys</mat-icon>
+            </div>
+        </mat-card-content>
+    </mat-card>
+  </div>
+  <button mat-raised-button color="primary" (click)="startGame()">
+    Start Game
+  </button>
+</div>

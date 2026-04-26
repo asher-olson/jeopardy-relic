@@ -1,0 +1,20 @@
+
+$orange: #fd6c1d;
+$red: #b61b5c;
+$lime: #c3fc0d;
+$purple: #470bf6;
+
+// Export as CSS custom properties for global use
+:root {
+  --color-orange: #{$orange};
+  --color-red: #{$red};
+  --color-lime: #{$lime};
+  --color-purple: #{$purple};
+}
+
+:export {
+  orange: $orange;
+  red: $red;
+  lime: $lime;
+  purple: $purple
+}

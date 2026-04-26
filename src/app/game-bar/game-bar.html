@@ -12,6 +12,10 @@
 <button matMiniFab>
     <mat-icon>menu</mat-icon>
 </button>
-<button matMiniFab class="margin-left-5">
-    <mat-icon>home</mat-icon>
+<button 
+    matMiniFab
+    class="margin-left-5"
+    (click)="onStopGame()"
+>
+    <mat-icon class="red">cancel</mat-icon>
 </button>

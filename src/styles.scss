@@ -1,4 +1,6 @@
 
+@use './variables' as *;
+
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
@@ -76,7 +78,7 @@ html {
 }
 
 html {
-  background-color: #470bf6;
+  background-color: $purple;
   font-family: kh-interference-regular;
   // font-family: fraktion-mono-bold;
   h2 {
@@ -96,7 +98,7 @@ html {
 }
 
 .mat-mdc-dialog-surface {
-  background-color: #fd6c1d !important;
+  background-color: $orange !important;
   border-radius: 10px !important;
 }
 

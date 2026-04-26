@@ -4,6 +4,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { GameBarPlayer } from './game-bar-player/game-bar-player';
 import { Player } from './player.model';
 import { Relic } from './relic.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-bar',
@@ -13,6 +14,8 @@ import { Relic } from './relic.model';
 })
 export class GameBar implements OnInit {
   protected players: WritableSignal<Player[]> = signal([]);
+
+  constructor(private router: Router) {}
 
   public ngOnInit() {
     this.setPlayers();
@@ -24,6 +27,10 @@ export class GameBar implements OnInit {
       match?.relics?.push(relic);
       return value;
     })
+  }
+
+  protected onStopGame(): void {
+    this.router.navigate(['/']);
   }
 
   private setPlayers(): void {
