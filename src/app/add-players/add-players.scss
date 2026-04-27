@@ -1,0 +1,36 @@
+
+.add-player-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        background-color: var(--color-orange);
+    }
+
+    mat-form-field {
+        flex: 1;
+    }
+}
+
+.players-container {
+    height: 270px;
+    overflow: hidden;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.add-player-input {
+    padding: 6px 10px;
+    border-radius: 8px;
+    width: 280px;
+    font-family: fraktion-mono-regular;
+}
+
+.player-name {
+    cursor: pointer;
+}

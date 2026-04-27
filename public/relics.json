@@ -1,0 +1,98 @@
+[
+    {
+        "name": "The Fucker",
+        "description": "On pickup steal all of Sam's points. Sam gets to choose another relic",
+        "imageUrl": "/fucker.png",
+        "act": "1"
+    },
+    {
+        "name": "BAIL ME OUT",
+        "description": "On pickup set your points equal to first place",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Bomb Vest",
+        "description": "Choose 2 other players. Set all of your points to 0",
+        "imageUrl": "/bail-me-out.png",
+        "act": "1"
+    },
+    {
+        "name": "Bomb Necklace",
+        "description": "Choose a player. The next time they answer a question wrong set their points to 0",
+        "imageUrl": "/bail-me-out.png",
+        "act": "1"
+    },
+    {
+        "name": "Brann's Rifle",
+        "description": "Get double point gain and loss from answers",
+        "imageUrl": "/bail-me-out.png",
+        "act": "1"
+    },
+    {
+        "name": "Nerd Emoji",
+        "description": "Get double points from questions you answer second",
+        "imageUrl": "/bail-me-out.png",
+        "act": "1"
+    },
+    {
+        "name": "Third Emoji",
+        "description": "After you answer a question correctly and third, triple your points",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "New Stim",
+        "description": "On pickup everyone loses half their points",
+        "imageUrl": "/bail-me-out.png",
+        "act": "1"
+    },
+    {
+        "name": "Papaya Shirt",
+        "description": "On pickup answer an Asher-related question, if you get it right get 10,000 points",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Flipped Script",
+        "description": "On pickup multiply your points by -2",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Hot Hand",
+        "description": "Whenever you answer a question correctly, you may answer the next one before anyone else",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Belay Device",
+        "description": "You can not lose points from answering incorrectly",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Piece of Duct Tape",
+        "description": "On pickup choose a player and a category, that player may not answer questions from that category",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Stonk Device",
+        "description": "On pickup choose a player. Their point gain and loss also happens to your points",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "X-Ray Goggles",
+        "description": "You may look at the final jeopardy question before you bet",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    },
+    {
+        "name": "Zarya Bubble",
+        "description": "Whenever you would lose points from another relic, gain them instead",
+        "imageUrl": "/bail-me-out.png",
+        "act": "2"
+    }
+]

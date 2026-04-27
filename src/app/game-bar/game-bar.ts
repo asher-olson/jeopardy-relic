@@ -5,20 +5,25 @@ import { GameBarPlayer } from './game-bar-player/game-bar-player';
 import { Player } from './player.model';
 import { Relic } from './relic.model';
 import { Router } from '@angular/router';
+import { AppService } from '../app-service';
+import { RelicService } from './relic-service';
 
 @Component({
   selector: 'app-game-bar',
   imports: [GameBarPlayer, MatButtonModule, MatIconModule],
+  providers: [RelicService],
   templateUrl: './game-bar.html',
   styleUrl: './game-bar.scss',
 })
 export class GameBar implements OnInit {
   protected players: WritableSignal<Player[]> = signal([]);
+  protected relics: WritableSignal<Relic[]> = signal([]);
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private appService: AppService, private relicService: RelicService) {}
 
   public ngOnInit() {
-    this.setPlayers();
+    this.initializePlayers();
+    this.relicService.initializeRelics();
   }
 
   protected onRelicAdded(player: Player, relic: Relic) {
@@ -26,66 +31,24 @@ export class GameBar implements OnInit {
       const match = value.find((p: Player) => p.id === player.id);
       match?.relics?.push(relic);
       return value;
-    })
+    });
+
+    this.relicService.removeRelic(relic);
   }
 
   protected onStopGame(): void {
     this.router.navigate(['/']);
   }
 
-  private setPlayers(): void {
-    const relics1: Relic[] = [
-      {
-        name: 'The Fucker',
-        description: 'Go Big Mode',
-        imageUrl: '/fucker.png'
-      },
-      {
-        name: 'BAIL ME OUT',
-        description: 'Go Poggers Mode',
-        imageUrl: '/bail-me-out.png'
-      }
-    ];
-
-    const relics2: Relic[] = [
-      {
-        name: 'emoji_110',
-        description: 'Go emoji mode and something long like this maybe',
-        imageUrl: '/emoji-110.png'
-      }
-    ];
-
-    this.players.set([
-      {
-      id: '1',
-      name: 'Asher',
-      relics: [...relics1]
-      },
-      {
-      id: '2',
-      name: 'The Brinkler',
-      relics: [...relics2]
-      },
-      {
-      id: '3',
-      name: 'Smamuel',
-      relics: [...relics1]
-      },
-      {
-      id: '4',
-      name: 'Lou',
-      relics: [...relics1]
-      },
-      {
-      id: '5',
-      name: 'Gooper',
-      relics: [...relics2]
-      },
-      {
-      id: '6',
-      name: 'Bajauceler',
-      relics: [...relics1]
-      }
-    ])
+  private initializePlayers(): void {
+    this.players.set(
+      this.appService.players.map((name: string, index: number) => {
+        return {
+          id: `${index}`,
+          name: name,
+          relics: []
+        };
+      })
+    );
   }
 }

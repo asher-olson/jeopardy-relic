@@ -1,0 +1,15 @@
+
+<div class="add-players-container">
+    <div class="players-container">
+        @for (player of playerNames(); track player) {
+            <p
+                (click)="removePlayer(player)"
+                class="player-name"
+            >{{ player }}</p>
+        }
+    </div>
+
+    <div class="add-player-form">
+        <input matInput [(ngModel)]="newPlayerName" (keyup.enter)="onAdd()" class="add-player-input" placeholder="Enter player name">
+    </div>
+</div>

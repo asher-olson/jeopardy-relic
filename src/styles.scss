@@ -116,3 +116,13 @@ html {
 .margin-left-5 {
   margin-left: 5px;
 }
+
+.compact-field {
+  @include mat.form-field-density(-4);
+}
+
+.add-player-form {
+  .mdc-text-field {
+    background-color: $orange !important;
+  }
+}

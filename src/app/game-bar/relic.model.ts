@@ -5,4 +5,5 @@ export interface Relic {
     name?: string;
     description?: string;
     imageUrl?: string;
+    act?: string;
 }
